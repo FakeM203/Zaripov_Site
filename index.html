@@ -9,8 +9,24 @@
 </head>
 <body>
 	<?php
-		include “”;
-	?>
+$name = $_POST['name'];
+$email = $_POST['email'];
+$text = $_POST['msg'];
+
+$to = "fakem203@gmail.com";
+$date = date ("d.m.Y");
+$time = date ("h:i");
+$from = $email;
+$subject = "Заявка c сайта";
+
+
+$msg="
+Name: $name /n
+Eamil: $email /n
+Text: $text";
+mail($to, $subject, $msg, "From: $from ");
+
+?>
 
 	<div class="header_menu">
 		
