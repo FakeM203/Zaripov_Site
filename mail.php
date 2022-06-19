@@ -20,7 +20,7 @@ mail($to, $subject, $msg, "From: $from ");
 <div class="bg">
     <div class="popup">
         <p>Succsesfuly send</p>
-        <a href="index.html"><< Вернуться на главную</a>
+        <a href="index.html"><< Return back</a>
     </div>
 </div>
 <style>

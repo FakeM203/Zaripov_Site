@@ -54,6 +54,7 @@ form.onsubmit = function(){
 
 	if (emptyinputs.length !== 0){
 		return false;
+		console.log("2")
 	}
 
 	if(!validateEmail(emailVal)){
