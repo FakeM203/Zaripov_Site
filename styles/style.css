@@ -1,0 +1,528 @@
+@import "fonts.css";
+
+
+*{margin: 0;padding: 0;}
+
+a{text-decoration: none;}
+
+header{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: flex-end;
+	background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+	background-position: 50% 100%;
+}
+.nav{
+	z-index: 2;
+	margin-right: 15%;
+	width: 70%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu{
+	cursor: pointer;
+	border: none;
+	background: none;
+	width: 26px;
+	height: 26px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.menu_line{
+	top: 0%;
+	bottom: 0%;
+	position: relative;
+	width: 100%;
+	height: 3px;
+	background: #356EAD;
+	opacity: 100%;
+	transition: 2s;
+}
+.header_content{
+	width: 80%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content_header{
+	height: 50%;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	color: #1F3F68;
+}
+.content_header h1{
+	font-family: "Galien";
+	font-size: 64px;
+	line-height: 74px;
+}
+.content_header p{
+	width: 80%;
+	font-size: 16px;
+	font-family: "Gilroy";
+	line-height: 26px;
+}
+.header_button{
+	width: 220px;
+	height: 56px;
+	background: #5A98D0;
+	box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+	border-radius: 10px;
+	border: none;
+	font-family: 'Gilroy';
+	font-size: 16px;
+	line-height: 26px;
+	color: white;
+}
+.header_illustration{
+	position: relative;
+	left: -100px;
+	width: 60%;
+	height: 100%;
+	background-image: url("../assets/img/illustration.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.illustration_bg{
+	animation: updown 10s ease-in-out infinite;
+	position: relative;
+	right: 4%;
+	top: 10%;
+	width: 280px;
+	height: 200px;
+	background-image: url("../assets/img/iillustration_part_bg.svg");
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+.illustration_parts{
+	position: relative;
+	left: -10px;
+	width: 60%;
+	height: 50%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+@keyframes updown{
+	0%{
+		top: 0%;
+	}
+	50%{
+		top: 5%;
+	}
+	100%{
+		top: 0%;
+	}
+}
+
+.what_we_do{
+	width: 100%;
+	height: 180vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wwd_content{
+	width: 60%;
+	height: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.wwd_txt{
+	animation: wwd_up 2s ease-in-out;
+	position: relative;
+	top: -10%;
+	font-family: 'Gilroy-Regular';
+	font-size: 36px;
+	line-height: 46px;
+	color: #316099;
+	width: 35%;
+	height: 20%;
+	text-align: ;
+}
+.wwd_block{
+	animation: wwd_up 2s ease-in-out;
+	position: relative;
+	width: 30%;
+	height: 35%;
+	box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 5%;
+	color: #1F3F68;
+}
+.wwd_block>h3{
+	font-family: 'Gilroy-Regular';
+	font-size: 20px;
+	line-height: 30px;
+	text-align: left;
+}
+.wwd_block>p{
+	font-family: 'Gilroy';
+	font-size: 16px;
+	line-height: 26px;
+	text-align: left;
+}
+.wwd_block>a{
+	display: flex;
+	font-size: 14px;
+	line-height: 30px;
+	font-family: 'Gilroy-Regular';
+	color: #5A98D0;
+	text-align: left;
+}
+.wwd_block img{
+	margin: 0 auto;
+}
+.wwd_block>a>img{
+	margin-left:25px ;
+}
+@keyframes wwd_up{
+	0%{
+		opacity: 0%;
+		bottom: -50%;
+	}
+	100%{
+		opacity: 100%;
+		bottom: 0%;
+	}
+}
+.our_clients{
+	width: 100%;
+	height: 200vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	background: #5a98d0;
+	border-radius: 200px 0 0 0;
+}
+.clients_content{
+	width: 60%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+}
+.clients_content_text{
+	width: 100%;
+	height: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.clients_content_text h2{
+	font-family: "Gilroy-Regular";
+	font-size: 36px;
+	color: white;
+	margin-right: 100px;
+}
+.clients_content_text p{
+	width: 60%;
+	font-family: "Gilroy";
+	font-size: 16px;
+	line-height: 26px;
+	color: white;
+}
+.clients_tab{
+	color: white;
+	font-size: 20px;
+	font-family: "Gilroy-Regular";
+}
+.clients_content table{
+	width: 100%;
+	height: 45%;		
+	border-collapse: collapse;
+}
+table th{
+	border: 1px solid white;
+}
+table tr:nth-of-type(1) th{ 
+	border-top: none;
+}
+table tr:nth-of-type(2) th{ 
+	border-bottom: none;
+}
+table tr:nth-of-type(1) th:nth-of-type(1){ 
+	border-left: none;
+}
+table tr:nth-of-type(1) th:nth-of-type(4){ 
+	border-right: none;
+}
+table tr:nth-of-type(2) th:nth-of-type(1){ 
+	border-left: none;
+}
+table tr:nth-of-type(2) th:nth-of-type(4){ 
+	border-right: none;
+	background: rgba(31, 63, 103, 0.2);
+}
+th{
+	cursor: pointer;
+}
+footer{
+	width: 90%;
+	height: 100vh;
+	background: #316099;
+	align-items: center;
+	border-radius: 0 200px 0 0;
+}
+.footer_top{
+	height: 50%;
+	width: 95%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.top_left_text{
+	width: 30%;	
+}
+.top_left_text h2{
+	font-family: "Gilroy-Regular";
+	font-size: 36px;
+	color: white;
+	margin-bottom: 30px;
+	line-height: 46px;
+}
+.top_left_text p{
+	font-family: "Gilroy";
+	font-size: 16px;
+	line-height: 26px;
+	color: white;
+}
+.footer_top button{
+	width: 20%;
+	height: 20%;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	font-family: "Gilroy-regular";
+	font-size: 16px;
+	background: #5a98D0;
+	cursor: pointer;
+}
+.footer_bottom{
+	width: 85%;
+	height: 50%;
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.footer_columns{
+	width: 80%;
+	height: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+.column{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 60%;
+}
+.column:nth-of-type(1){
+	height: 95%;
+}
+.column:nth-of-type(1)>p{
+	font-family: "gilroy";
+	margin-top: 50px;
+	color: rgba(255, 255, 255, 0.4);
+}
+.footer_logo{
+	color: white;
+	font-family: "Gilroy-Regular";
+	font-size: 28px;
+	display: flex;
+}
+.column_text{
+	display: flex;
+	color: white;
+}
+.column_text>a{
+	font-family: "Gilroy";
+	color: white;
+}
+.column_text>h4{
+	margin-right: 10px;
+	font-family: Gilroy-regular;
+	font-size: 16px;
+}
+.column_text>p{
+	font-family: Gilroy;
+	font-size: 16px;
+}
+.column>h3{
+	margin-bottom: 30px;
+	font-family: "Gilroy-Regular";
+	font-size: 20px;
+}
+.column>a{
+	font-family: "Gilroy";
+	font-size: 16px;
+	color: white;
+}
+.lets_talk{
+	z-index: 3;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.0) 1%,rgba(0, 0, 0, 0.4) 21%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 100%;
+	transition: 1s;
+}
+.message_bg{
+	z-index: 7;
+	transition: 1.5s;
+	position: fixed;
+	width: 25%;
+	height: 80vh;
+	display: flex;
+	background: white;
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+	top: 10%;
+	left: 100%;
+}
+.message{
+	width: 80%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.message>h3{
+	font-family: "Gilroy-regular";
+	color: rgba(31, 63, 104, 1.0);
+	font-size: 20px;
+}
+.message_input{
+	width: 90%;
+	height: 15%;
+	font-family: "Gilroy-regular";
+	font-size: 16px;
+}
+.message_input>p{
+	margin-bottom: 10px;
+}
+.message_input>input{
+	border-radius: 10px;
+	border: 1px solid #356ead;
+	padding-left: 30px;
+	font-size: 16px;
+	font-family: "gilroy";
+	width: 100%;
+	height: 70%;
+}
+.message_input:nth-of-type(3){
+	height: 30%;
+}
+.message_input:nth-of-type(3) textarea{
+	border-radius: 10px;
+	border: 1px solid #356ead;
+	padding-left: 30px;
+	font-size: 16px;
+	font-family: "gilroy";
+	width: 100%;
+	height: 90%;
+	padding-top: 10px;
+}
+.message>input{
+	width: 100%;
+	height: 10%;
+	font-family: "gilroy";
+	font-size: 16px;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+	background: #5a98d0;
+	cursor: pointer;
+}
+.active{
+	overflow: hidden;
+}
+.active .lets_talk{
+	transform: 1s;
+	left: 0;
+}
+.active .message_bg{
+	transform: 1.5s;
+	left: 40%;
+}
+.menu_open .menu {
+	transition: 1s;
+}
+.menu_open .menu .menu_line:nth-of-type(2){
+	opacity: 0%;
+	transition: 1s;
+}
+.menu_open .menu .menu_line:nth-of-type(1){
+	top: 60%;
+	transition: 1s;
+	transform: rotate(-45deg);
+}
+.menu_open .menu .menu_line:nth-of-type(3){
+	bottom: 60%;
+	transition: 1s;
+	transform: rotate(45deg);
+}
+.header_menu{
+	transition: 1s;
+	top: -30%;
+	opacity: 0%;
+	z-index: 1;
+	width: 100%;
+	height: 20vh;
+	position: absolute;
+	background: #5A98D0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.header_menu>a{
+	margin-top: 20px;
+	font-family: "Gilroy-regular";
+	font-size: 26px;
+	color: white;
+}
+.menu_open .header_menu{
+	top: 0;
+	opacity: 100%;
+	transition: 1s;
+}
+.message_input .error{
+	border:1px solid red;
+}
+.message_input:nth-of-type(3) .error{
+	border:1px solid red;
+}
